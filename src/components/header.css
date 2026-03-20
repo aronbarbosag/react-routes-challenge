@@ -1,0 +1,40 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+li {
+  text-decoration: None;
+  list-style: None;
+  display: block;
+}
+
+.links {
+  display: flex;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+.links li {
+  background-color: #eeee;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid #eeee;
+}
+
+.links li a {
+  padding: 10px 15px;
+  color: black;
+}
+
+.links li a:hover {
+  background-color: #dddd;
+}
+
+.active {
+  color: rgb(42, 115, 250) !important;
+}

@@ -1,0 +1,38 @@
+body {
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+.contato img {
+  border-radius: 5px;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 700px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contato-info {
+  font-size: 1.3rem;
+}
+.contato-info h3 {
+  margin-bottom: 1.2rem;
+}
+
+.animeleft {
+  transform: translateX(-30px);
+  opacity: 0;
+  animation: animeleft 0.3s ease forwards;
+}
+
+@keyframes animeleft {
+  to {
+    transform: initial;
+    opacity: 1;
+  }
+}
