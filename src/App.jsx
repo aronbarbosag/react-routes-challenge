@@ -19,6 +19,7 @@ function App() {
         <Routes>
 
           <Route path='contato' element={<Contato />} />
+          <Route path='/' element={<Produtos />} />
           <Route path='produtos' element={<Produtos />} />
           <Route path='produtos/:id' element={<Produto />} />
           <Route path='*' element={<NotFound />} />
