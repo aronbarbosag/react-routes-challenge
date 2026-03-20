@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Contato from './components/Contato'
 import NotFound from './components/NotFound'
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Head />
         <Header />
         <Routes>
@@ -25,7 +25,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
 
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }

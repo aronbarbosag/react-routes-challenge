@@ -48,7 +48,7 @@ const Produtos = () => {
   return (
     <section className='produtos animeleft'>
       {produtos.map(produto =>
-        <Link to={produto.id} key={produto.id} >
+        <Link to={produto.id} key={produto.id} end >
           <img src={produto.fotos[0].src} alt={produto.id} />
           <h3>{produto.fotos[0].titulo}</h3>
         </Link>)}
